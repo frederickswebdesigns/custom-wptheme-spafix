@@ -1,0 +1,421 @@
+/*
+*Theme Name: Spa Fix Adelaide
+*Theme URI: https//www.frederickswebdesigns.com.au
+*Author: Frederick Bogdanoff
+*Author URI: https://www.frederickswebdesigns.com.au
+*Description: Theme for a Spa Repair Company
+*/
+
+html,
+body {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #333;
+  height: 100%;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.page-child h3 {
+  border-bottom: 1px solid #308dd4;
+}
+a:link,
+a:visited {
+  color: #006ec3;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.65em;
+}
+/* metaslider style */
+
+.metaslider .caption {
+  font-size: 16px;
+}
+
+.metaslider .caption-wrap {
+  line-height: normal !important;
+}
+/* General Layout and post styles */
+
+.csColumn ul li,
+.home-columns ul li,
+.csColumn blockquote,
+.home-columns blockquote {
+  text-align: left !important;
+  width: 100% !important;
+}
+
+div.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0px 20px;
+  flex: 1 0 auto;
+}
+.main-nav ul li a {
+  margin-right: 15px;
+  transition: 0.2s;
+  padding: 5px;
+}
+
+.home-title {
+  text-align: center;
+}
+
+.blog .container,
+.archive .container {
+  padding-top: 59px;
+  max-width: 70%;
+}
+.blog .post,
+.archive .post {
+  border-bottom: solid 1px #999;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.post h2 {
+  margin-bottom: 0;
+}
+p.post-info {
+  font-size: 87%;
+  color: #999;
+}
+p.post-info a:link,
+p.post-info a:visited {
+  color: #999;
+  text-decoration: underline !important;
+}
+
+/* footer styles */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-shrink: 0;
+  background-color: #308dd4;
+  padding-bottom: 1px;
+  width: 100%;
+}
+.footer-info {
+  font-size: 13px;
+  margin-right: 5px;
+}
+.footer-info p {
+  color: white !important;
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+.footer-nav ul li {
+  margin-top: 20px;
+}
+.footer-nav ul li a {
+  color: white;
+  margin-bottom: 10px;
+  transition: ease-in-out 0.2s;
+}
+.footer-nav ul li a:hover {
+  color: #888;
+}
+/* Header Layout And Styles */
+
+.site-header {
+  position: static;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  height: 59px;
+}
+
+.site-header .main-nav {
+  display: none;
+}
+.main-nav ul,
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+img {
+  float: none !important;
+}
+#header-image {
+  width: 250px;
+}
+
+.site-header .main-nav ul li.current-menu-item a:link,
+.site-header .main-nav ul li.current-menu-item a:visited,
+.site-header .main-nav a:hover {
+  color: #888 !important;
+}
+.main-nav a:hover {
+  color: #888 !important;
+}
+
+/* ============ hamburger menu & navigation =========== */
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #006ec3;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.mobile-nav .sub-menu {
+  display: none;
+}
+.sub-menu .menu-item a {
+  font-size: 13px !important;
+}
+.mobile-nav ul.sub-menu li {
+  text-align: center !important;
+  padding-top: 10px !important;
+}
+
+.mobile-menu {
+  display: block;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.mobile-nav {
+  display: none;
+}
+.mobile-nav ul {
+  margin: 0;
+  padding: 0;
+}
+.mobile-nav ul li {
+  font-size: 20px;
+  margin: 10px auto;
+  text-align: center;
+}
+.mobile-nav ul li a {
+  padding: 0 70px;
+}
+
+.mobile-nav a:hover {
+  color: #888 !important;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+/* ============ /hamburger menu =========== */
+
+/* Page Layout */
+
+main.page h3 {
+  font-size: 30px;
+}
+/* hero and intro */
+.hero-image {
+  margin-top: 0;
+  height: 50%;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #006ec3;
+  background-attachment: scroll;
+}
+.intro {
+  margin: 0 auto;
+  position: relative;
+  top: 15%;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.904);
+  max-width: 70%;
+  display: none;
+}
+
+.hero-image h1 {
+  margin: 0 auto;
+  padding-bottom: 0px;
+  text-align: center;
+  font-size: 40px;
+  color: #308dd4; /* Will override color (regardless of order) */
+}
+
+.intro span {
+  font-size: 25px;
+  color: #308dd4;
+}
+
+.click-to-call {
+  display: block;
+  padding: 10px 0px;
+  margin: 10px auto 0 auto;
+  font-size: 20px;
+  background: #308dd4;
+  border: none;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+}
+.click-to-call a {
+  color: white;
+  padding: 15px 30px;
+  font-weight: 500;
+}
+.click-to-call:hover {
+  background: hsla(206, 100%, 38%, 0.425);
+}
+/* Home */
+.flexslider {
+  margin: 0 auto !important;
+}
+
+.wp-svg-lightning.lightning,
+.wp-svg-fire.fire,
+.wp-svg-cog-2.cog-2,
+.wp-svg-droplet.droplet {
+  font-size: 75px;
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 768px) {
+  /* header and nav styles */
+  .site-header {
+    position: fixed;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 900;
+    top: 0;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+  }
+  .site-header .main-nav {
+    display: flex;
+  }
+  .site-header .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 20px;
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+    z-index: 900;
+  }
+  .site-header .main-nav ul li a {
+    font-size: 16px;
+    /* margin-right: 23px; */
+  }
+  .main-nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .site-header .main-nav ul li {
+    padding-top: 10px;
+  }
+  /* intro and hero image styles */
+  .hero-image {
+    margin-top: 59px;
+    height: 600px;
+    background-size: cover;
+    background-position: top;
+  }
+  .hero-image h1 {
+    font-size: 50px;
+    padding-bottom: 30px;
+    width: 400px;
+  }
+  .intro {
+    width: 400px;
+  }
+  .intro span {
+    font-size: 30px;
+  }
+
+  .click-to-call {
+    margin-top: 35px;
+  }
+  /* mobile nav none */
+  .mobile-menu,
+  .mobile-nav {
+    display: none;
+  }
+
+  /* footer styles */
+  .footer-info {
+    margin-right: 20px;
+  }
+  .footer-nav ul {
+    flex-direction: column;
+  }
+  .footer-nav ul li {
+    margin-right: 15px;
+  }
+  /* 	layout */
+  div.container {
+    max-width: 1120px;
+  }
+  /* homepage styles */
+  .home-items {
+    flex-direction: row;
+    width: 100%;
+  }
+  /* blog styles	 */
+
+  .blog h2 {
+    font-size: 24px;
+  }
+
+  /* wordpress core classes */
+  img.alignright {
+    float: right !important;
+    margin: 0 0 1em 1em;
+  }
+  img.alignleft {
+    float: left !important;
+    margin: 0 1em 1em 0;
+  }
+  img.aligncenter {
+    display: block !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .alignright {
+    float: right !important;
+  }
+  .alignleft {
+    float: left !important;
+  }
+  .aligncenter {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
